@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width">
+<html  lang="en">
+    <head>
+        <title>
+            BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video, Audio
+        </title>
+        <link rel="icon" type="image/x-icon" href="bbc.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+
+            <div class="flex-container_header">
+                <div class="flex-container_leftbuttons">
+                    <button class="left_buttons" style="background-image: url(option.png);">
+                        
+                    </button>
+                    <button class="left_buttons" style="background-image: url(search.png);" >
+                        
+                    </button>
+
+
+                </div>
+                <div class="flex-container_logo">
+                    <button class="logo">
+
+                    </button>
+
+                </div>
+                
+                <div class="flex-container_rightbuttons">
+                    <button class="right_buttons" style="background-color: black;color:white;" onclick="openGoogle()">
+                        Register                       
+                    </button>
+                    
+                    <button class="right_buttons" style=" background-color: rgb(255, 255, 255);color:rgb(0, 0, 0);">
+                        Sign Up                       
+                    </button>
+                </div>
+
+            </div>
+
+            
+            
+            
+        </header>
+        <section class="flex-container_navbar">
+            <!-- <ul>
+                <li>
+                    <div>
+                        <button>
+                            Home
+                        </button>
+                    </div>
+                </li>
+                <li>hellow</li>
+                <li>hey</li>
+            </ul> -->
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Home
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    News
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Sports
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Business
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Innovation
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Culture
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Travel
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Earth
+                </button>
+            </div>
+            <div style="border-left: 1px solid #bebcbc; height: 33px;"></div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Video
+                </button>
+            </div>
+            <div>
+                <button class="navbar_button" onclick="underline(this)">
+                    Live
+                </button>
+            </div>
+
+        </section>
+        
+
+        <script>
+            const openGoogle = ()=> {
+                window.open('https://www.google.com', '_blank');
+            }
+
+            const underline= (button) => {
+                document.querySelectorAll('.navbar_button').forEach(btn => {
+                    btn.classList.remove('active')
+                });
+
+                button.classList.add('active');
+            }
+        </script>
+        
+    </body>
+</html>

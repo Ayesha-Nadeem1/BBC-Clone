@@ -1,0 +1,129 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 66px;
+    width: 100%;
+}
+.flex-container_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 60px;
+    max-width: 1432px;
+    background-color: transparent;
+    border-bottom: 1px solid #bebcbc;
+}
+.flex-container_leftbuttons{
+    padding: 50px;
+    display: flex;
+    justify-content: left;
+    height: 32px;
+    width: 466.6px;
+    background-color: transparent;
+}
+.flex-container_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 466.6px;
+    background-color: transparent;
+}
+.flex-container_rightbuttons{
+    padding-right: 50px;
+    display: flex;
+    justify-content: right;
+    height: 32px;
+    width: 466.6px;
+    background-color: transparent;
+}
+
+.left_buttons{
+    border: none;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+}
+
+.right_buttons{ 
+    text-align: center;
+    border: none;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 80px;
+    /* background-color: transparent; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.right_buttons:hover{
+    background-color: black;
+}
+.logo{
+    border: none;
+    background-size: 110px 90px;
+    background-image: url(bbc_logo.png);
+    background-repeat: no-repeat;
+    height: 105px;
+    width: 145px;
+    background-color: transparent;
+}
+.flex-container_navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 40px;
+    max-width: 1432px;
+    background-color: transparent;
+    border-bottom: 1px solid #dddcdc;
+}
+/* section{
+    display: flex;
+    border-bottom: 1px solid #bebcbc;
+} */
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bebcbc;
+    width: 100%;
+
+    background-color: transparent;
+}
+
+.navbar_button{
+    /* display: inline-block; */
+    border: none;
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    height: 40px;
+    padding-top: 0;
+    
+}
+.navbar_button.active{
+    border-bottom: 2px solid black;
+}
+
+.navbar_button:hover{
+    background-color: #bebcbc;
+    padding: 0;
+    margin: 0;
+}

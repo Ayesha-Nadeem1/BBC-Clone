@@ -1,131 +1,537 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html  lang="en">
-    <head>
-        <title>
-            BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video, Audio
-        </title>
-        <link rel="icon" type="image/x-icon" href="bbc.png">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="header">
+  <head>
+    <title>
+      BBC Home - Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video, Audio
+    </title>
+    <link rel="icon" type="image/x-icon" href="assests/bbc.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header2">
+      <div class="flex-container_header">
+        <div class="flex-container_leftbuttons">
+          <button class="left_buttons" style="background-image: url(assests/option.png);"></button>
+          <button class="left_buttons" style="background-image: url(assests/search.png);" ></button>
+        </div>
+        <div class="flex-container_logo">
+          <button class="logo"></button>
+        </div>        
+        <div class="flex-container_rightbuttons">
+          <button class="right_buttons" style="background-color: black;color:white;" onclick="openGoogle()">
+            Register                       
+          </button>
+          
+          <button class="right_buttons" style=" background-color: rgb(255, 255, 255);color:rgb(0, 0, 0);">
+            Sign Up                       
+          </button>
+        </div>
 
-            <div class="flex-container_header">
-                <div class="flex-container_leftbuttons">
-                    <button class="left_buttons" style="background-image: url(option.png);">
-                        
-                    </button>
-                    <button class="left_buttons" style="background-image: url(search.png);" >
-                        
-                    </button>
+      </div>          
+    </header>
+    <!-- navbar -->
+    <section class="flex-container_navbar2 navalign">
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Home
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              News
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Sports
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Business
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Innovation
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Culture
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Travel
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Earth
+          </button>
+      </div>
+      <div style="border-left: 1px solid #bebcbc; height: 33px;"></div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Video
+          </button>
+      </div>
+      <div>
+          <button class="navbar_button" onclick="underline(this)">
+              Live
+          </button>
+      </div>
+    </section>
+    <div class="container">
+      <div class="article small" style="border-bottom:  1px solid  #bebcbc; padding-block-end: 30px;">
+        <img src="assests/hamas.png" alt="Image 2">
+        <h2>Hamas faces growing public dissent as Gaza war erodes support</h2>
+        <p>Palestinians in Gaza are openly criticizing the armed group both on the streets and online.</p>
+        <p style="font-size: 0.6em;">12 hrs ago | Middle East</p>
+      </div>
+      <div class="article large">
+        <img src="assests/biden.png" alt="Image 1">
+        <h2>I'm not leaving, Biden says, as pressure to drop out grows</h2>
+        <p>Speculation is swirling around whether the president will continue his re-election bid after last week's disastrous debate.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+      </div>
+      <div class="article small">
+        <h2>How does Sir John Curtice prepare for election night?</h2>
+        <p>For Sir John Curtice, who has covered elections for the BBC for decades, each one is full of new challenges.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+        <div class="small_center">
+          <h2>Ukraine calls them meat assaults: Russia's brutal plan to take ground</h2>
+          <p>Moscow is throwing wave after wave of men in an attempt to break through Ukrainian lines and take ground. The tactic is working.</p>
+          <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+        </div>
+        <div class="small_center">
+          <h2>It's a disaster: Hurricane Beryl batters Jamaica</h2>
+          <p>Floodwaters poured down streets of Kingston, as the storm ripped roofs off buildings and swamped the island's southern coast.</p>
+          <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+        </div>
+        <div class="small_center">
+          <h2>Australian Senator resigns after Gaza vote backlash</h2>
+          <p>Emma Pyman has left the Labor party, after being penalized for supporting a vote on Palestinian statehood.</p>
+          <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+        </div>
+      </div>
+      <div class="article small">
+        <img src="assests/live.png" alt="Image 4">
+        <h2>LIVE: Polls open across UK as voting begins in general election</h2>
+        <p>Polling stations in 650 constituencies across England, Wales, Scotland and Northern Ireland open at 06:00 GMT.</p>
+      </div>      
+    </div>
 
+    <div class="textcontainer">
+      <h3 style=" font-weight: bolder;">Only from the BBC</h3>
+    </div>
+    <div class="container3">
+      <div class="article small">
+        <img src="assests/C3 (1).png" alt="Image 4">
+        <h2>It's a disaster: Hurricane Beryl batters Jamaica</h2>
+        <p>Polling stations in 650 constituencies across England, Wales, Scotland and Northern Ireland open at 06:00 GMT.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+      </div> 
+      <div class="article small">
+        <img src="assests/C3 (2).png" alt="Image 4">
+        <h2>It's a disaster: Hurricane Beryl batters Jamaica</h2>
+        <p>Polling stations in 650 constituencies across England, Wales, Scotland and Northern Ireland open at 06:00 GMT.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+      </div>  
+    </div>
+    <!-- first ad -->
+    <section class="section" style="background-color: #f3efef; display: flex; justify-content: center; align-items: center; padding: 15px;">
+      <img src="assests/section4.png" alt="Image 4">
+    </section>
 
-                </div>
-                <div class="flex-container_logo">
-                    <button class="logo">
+    <div class="textcontainer">
+      <h3 style=" font-weight: bolder;">More on the UK election</h3>
+    </div>
+    <div class="container2">
+      <div class="article small">
+        <img src="assests/container2_1.png" alt="Image 4">
+        <h2>It's a disaster: Hurricane Beryl batters Jamaica</h2>
+        <p>Polling stations in 650 constituencies across England, Wales, Scotland and Northern Ireland open at 06:00 GMT.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+      </div> 
+      <div class="article small">
+        <img src="assests/container2_2.png" alt="Image 4">
+        <h2>It's a disaster: Hurricane Beryl batters Jamaica</h2>
+        <p>Polling stations in 650 constituencies across England, Wales, Scotland and Northern Ireland open at 06:00 GMT.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+      </div> 
+      <div class="article small">
+        <img src="assests/container2_3.png" alt="Image 4">
+        <h2>It's a disaster: Hurricane Beryl batters Jamaica</h2>
+        <p>Polling stations in 650 constituencies across England, Wales, Scotland and Northern Ireland open at 06:00 GMT.</p>
+        <p style="font-size: 0.6em;">2 hrs ago | USA & Canada</p>
+      </div> 
+    </div>
 
-                    </button>
+    
+    <!-- news videos -->
 
-                </div>
-                
-                <div class="flex-container_rightbuttons">
-                    <button class="right_buttons" style="background-color: black;color:white;" onclick="openGoogle()">
-                        Register                       
-                    </button>
-                    
-                    <button class="right_buttons" style=" background-color: rgb(255, 255, 255);color:rgb(0, 0, 0);">
-                        Sign Up                       
-                    </button>
-                </div>
+    <div style="background-color: #1a1a1a; ">
+      <br>
+      <hr style="margin: 0 20px; height: 2px; background-color: white;">
+      <div class="textcontainer">
+        <h4 style="color: white; margin-left: 20px;">UK general election</h4>
+      </div>
+      <div class="centervideos">
+        <div class="news-container">
+          <div class="news-item">
+            <img src="assests/news_vids (1).png" alt="News 1">
+            <h3>'We did it! Change begins now' - Starmer's victory speech</h3>
+            <p>The Labour party has officially won the 2024 general election. The next prime minister Keir Starmer gives his victory speech from central London.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (2).png" alt="News 2">
+            <h3>Sunak - 'I take responsibility for the loss'</h3>
+            <p>In a fairly short speech, Rishi Sunak concedes defeat after holding his seat in Richmond, Yorkshire.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (3).png" alt="News 3">
+            <h3>Nigel Farage becomes MP as he wins Clacton seat</h3>
+            <p>It is Nigel Farage's eighth attempt at becoming an MP.</p>
+            <span>3 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (4).png" alt="News 4">
+            <h3>Some of the most notable Conservative losses this election</h3>
+            <p>Rishi Sunak says Britain has delivered a "sobering verdict" and takes responsibility for the loss.</p>
+            <span>1 hr ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (5).png" alt="News 1">
+            <h3>'We did it! Change begins now' - Starmer's victory speech</h3>
+            <p>The Labour party has officially won the 2024 general election. The next prime minister Keir Starmer gives his victory speech from central London.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (6).png" alt="News 2">
+            <h3>Sunak - 'I take responsibility for the loss'</h3>
+            <p>In a fairly short speech, Rishi Sunak concedes defeat after holding his seat in Richmond, Yorkshire.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (7).png" alt="News 3">
+            <h3>Nigel Farage becomes MP as he wins Clacton seat</h3>
+            <p>It is Nigel Farage's eighth attempt at becoming an MP.</p>
+            <span>3 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (8).png" alt="News 4">
+            <h3>Some of the most notable Conservative losses this election</h3>
+            <p>Rishi Sunak says Britain has delivered a "sobering verdict" and takes responsibility for the loss.</p>
+            <span>1 hr ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (9).png" alt="News 3">
+            <h3>Nigel Farage becomes MP as he wins Clacton seat</h3>
+            <p>It is Nigel Farage's eighth attempt at becoming an MP.</p>
+            <span>3 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (10).png" alt="News 4">
+            <h3>Some of the most notable Conservative losses this election</h3>
+            <p>Rishi Sunak says Britain has delivered a "sobering verdict" and takes responsibility for the loss.</p>
+            <span>1 hr ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <section class="section" style="background-color: #f3efef; display: flex; justify-content: center; align-items: center; padding: 15px;">
+      <img src="assests/forbes.png" alt="Image 4">
+    </section>
+    <div style="background-color: #1a1a1a;">
+      <br>
+      <hr style="margin: 0 20px; height: 2px; background-color: white;">
+      <div class="textcontainer">
+        <h4 style="color: white; margin-left: 20px;">Must watch</h4>
+      </div>
+      <div class="centervideos">
+        <div class="news-container">
+          <div class="news-item">
+            <img src="assests/must_watch (1).png" alt="News 1">
+            <h3>'We did it! Change begins now' - Starmer's victory speech</h3>
+            <p>The Labour party has officially won the 2024 general election. The next prime minister Keir Starmer gives his victory speech from central London.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/must_watch (2).png" alt="News 2">
+            <h3>Sunak - 'I take responsibility for the loss'</h3>
+            <p>In a fairly short speech, Rishi Sunak concedes defeat after holding his seat in Richmond, Yorkshire.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/must_watch (3).png" alt="News 3">
+            <h3>Nigel Farage becomes MP as he wins Clacton seat</h3>
+            <p>It is Nigel Farage's eighth attempt at becoming an MP.</p>
+            <span>3 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/must_watch (4).png" alt="News 4">
+            <h3>Some of the most notable Conservative losses this election</h3>
+            <p>Rishi Sunak says Britain has delivered a "sobering verdict" and takes responsibility for the loss.</p>
+            <span>1 hr ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/must_watch (5).png" alt="News 1">
+            <h3>'We did it! Change begins now' - Starmer's victory speech</h3>
+            <p>The Labour party has officially won the 2024 general election. The next prime minister Keir Starmer gives his victory speech from central London.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/must_watch (6).png" alt="News 2">
+            <h3>Sunak - 'I take responsibility for the loss'</h3>
+            <p>In a fairly short speech, Rishi Sunak concedes defeat after holding his seat in Richmond, Yorkshire.</p>
+            <span>2 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (7).png" alt="News 3">
+            <h3>Nigel Farage becomes MP as he wins Clacton seat</h3>
+            <p>It is Nigel Farage's eighth attempt at becoming an MP.</p>
+            <span>3 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (8).png" alt="News 4">
+            <h3>Some of the most notable Conservative losses this election</h3>
+            <p>Rishi Sunak says Britain has delivered a "sobering verdict" and takes responsibility for the loss.</p>
+            <span>1 hr ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (9).png" alt="News 3">
+            <h3>Nigel Farage becomes MP as he wins Clacton seat</h3>
+            <p>It is Nigel Farage's eighth attempt at becoming an MP.</p>
+            <span>3 hrs ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+          <div class="news-item">
+            <img src="assests/news_vids (10).png" alt="News 4">
+            <h3>Some of the most notable Conservative losses this election</h3>
+            <p>Rishi Sunak says Britain has delivered a "sobering verdict" and takes responsibility for the loss.</p>
+            <span>1 hr ago | Politics</span>
+            <hr style="padding: 0 5px;">
+          </div>
+        </div>
+      </div>
+    </div>
 
-            </div>
+    <div class="textcontainer">
+      <h3 style="padding-left: 50px; font-weight: bolder;">History</h3>
+    </div>
+    <div class="container4">
+      <div class="article large">
+        <img src="assests/history.png" alt="Image 4">      
+      </div> 
+      <div class="article small2">
+        <h1 style="font-size: 1.6em; margin-top: 30%;">The people who still love floppy disks</h1>
+        <p>They may have barely enough capacity to store a modern smart phone picture, but some people still love using this technology from the 1980s.</p>
+        <button style="border: 2px solid black; background-color: white; height: 30px; width: 90px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">See more</button>
+      </div>  
+    </div>
+    
+    <div class="container4" style="border-top: 1px solid black;">
+      <div class="article small2">
+        <h3 style="padding-left: 0px; padding-top: 0; margin-top: 0; font-weight: bolder;">Travel ></h3>
+        <h1 style="font-size: 1.6em; margin-top: 30%;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+        <button style="border: 2px solid black; background-color: white; height: 30px; width: 90px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">See more</button>
+      </div> 
+      <div class="article large">
+        <img src="assests/travel.png" alt="Image 4">
+      </div>  
+    </div>
+    <section class="section" style="background-color: #f3efef; display: flex; justify-content: center; align-items: center; padding: 15px;">
+      <img src="assests/ad.png" alt="Image 4">
+    </section>
+    <div style="background-color: #1a1a1a;">
+      <section style="padding: 20px 60px; background-color: rgb(32, 32, 32);">
+        <div class="container4" style="background-color: black;">
+          <div class="article large" style="background-color: transparent;">
+            <img src="assests/black.png" alt="Image 4">      
+          </div> 
+          <div class="article small2" style="background-color: transparent;">
+            <h1 style="font-size: 1.6em; margin-top: 30%; color: white;">The people who still love floppy disks</h1>
+            <p>They may have barely enough capacity to store a modern smart phone picture, but some people still love using this technology from the 1980s.</p>
+            <button style="border: 2px solid black; background-color: white; height: 30px; width: 90px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">See more</button>
+          </div>  
+        </div>
+      </section>     
+    </div>
+    
+    <div>
+      <br> <br>
+    </div>
+    <div class="container4" style="border-top: 2px solid black; border-bottom: 2px solid black; padding-bottom: 30px;">
+      <div class="article small2">
+        <h3 style="padding-left: 0px; padding-top: 0; margin-top: 0; font-weight: bolder;">Tennis ></h3>
+        <h1 style="font-size: 1.6em; margin-top: 30%;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+        <button style="border: 2px solid black; background-color: white; height: 30px; width: 90px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">See more</button>
+      </div> 
+      <div class="article large">
+        <img src="assests/tennis.png" alt="Image 4">
+      </div>  
+    </div>
 
-            
-            
-            
-        </header>
-        <section class="flex-container_navbar">
-            <!-- <ul>
-                <li>
-                    <div>
-                        <button>
-                            Home
-                        </button>
-                    </div>
-                </li>
-                <li>hellow</li>
-                <li>hey</li>
-            </ul> -->
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Home
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    News
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Sports
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Business
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Innovation
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Culture
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Travel
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Earth
-                </button>
-            </div>
-            <div style="border-left: 1px solid #bebcbc; height: 33px;"></div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Video
-                </button>
-            </div>
-            <div>
-                <button class="navbar_button" onclick="underline(this)">
-                    Live
-                </button>
-            </div>
+    <div class="textcontainer">
+      <h3 style="font-weight: bolder;">Sign Up for newsletters</h3>
+    </div>
+    
+    <div class="container4" style=" padding-bottom: 30px;">
+      <div class="article small2">
+        <img src="assests/newsletter (1).png" alt="Image 4">
+        <h1 style="font-size: 1.1em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div> 
+      <div class="article small2">
+        <img src="assests/newsletter (2).png" alt="Image 4">
+        <h1 style="font-size: 1.1em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div> 
+      <div class="article small2">
+        <img src="assests/newsletter (3).png" alt="Image 4">
+        <h1 style="font-size: 1.1em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div> 
+    </div>
+    <section class="section" style="background-color: #f3efef; display: flex; justify-content: center; align-items: center; padding: 15px;">
+      <img src="assests/ad.png" alt="Image 4">
+    </section>
+    <div><br><br></div>
+    <div class="container5" style=" padding-bottom: 30px;">
+      <div class="article small2" style="border-top: 2px solid black; border-bottom: 0.6px solid rgb(180, 180, 180); padding-right: 20px;">
+        <h2>Earth</h2>
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+        <img src="assests/newsletter (1).png" alt="Image 4">
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div> 
+      <div class="article small2" style="border-top: 2px solid black;border-bottom: 0.6px solid rgb(180, 180, 180); padding-right: 20px;">
+        <h2>Science and health</h2>
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+        <img src="assests/newsletter (2).png" alt="Image 4">
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div> 
+      <div class="article small2" style="border-top: 2px solid black;border-bottom: 0.6px solid rgb(180, 180, 180); padding-right: 20px;">
+        <h2>World's Table</h2>
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+        <img src="assests/newsletter (3).png" alt="Image 4">
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div>
+      <div class="article small2" style="border-top: 2px solid black;border-bottom: 0.6px solid rgb(180, 180, 180); padding-right: 20px;">
+        <h2>The Specialist</h2>
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+        <img src="assests/biden.png" alt="Image 4">
+        <h1 style="font-size: 0.9em;">How not to be a bad tourist - and still travel</h1>
+        <p>A new book chronicles the power that travel has to transform places, for better or worse - and asks us to consider that the label "tourist" can be a good one.</p>
+      </div> 
+    </div>
+    <div><br><br></div>
 
+    <div style="border-top: 1px solid black;">
+      <div class="textcontainer">
+        <section class="footer">
+          <img src="assests/bbc_footer.png" alt="Image 4" style="height: 33px; width: 105px;" >
+          <div>
+            <button class="footer_button">Home</button>
+            <button class="footer_button">News</button>
+            <button class="footer_button">Sport</button>
+            <button class="footer_button">Business</button>
+            <button class="footer_button">Innovation</button>
+            <button class="footer_button">Culture</button>
+            <button class="footer_button">Travel</button>
+            <button class="footer_button">Earth</button>
+            <button class="footer_button">Video</button>
+            <button class="footer_button">Live</button>
+            <button class="footer_button">Audio</button>
+            <button class="footer_button">Weather</button>
+            <button class="footer_button">BBC Shop</button>
+            <div class="dropdown">
+              <select style="justify-content: center; align-items: center; border: none; background-color: transparent; font-size: 13px; color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <option>BBC in other languages</option>
+                <!-- Add other language options here -->
+              </select>
+            <div><br><br></div>  
+          </div>
+          <section><hr style="border-top: #1a1a1a;"></section>
+          <div class="social-media">
+            <span style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif;">Follow BBC on:</span>
+            <a href="#"><img class="social" src="assests/twitter.png" alt="Icon"></a>
+            <a href="#"><img class="social" src="assests/fb.jpg" alt="Icon"></a>
+            <a href="#"><img class="social" src="assests/instagram.png" alt="Icon"></a>
+            <a href="#"><img class="social" src="assests/tiktok.png" alt="Icon"></a>
+            <a href="#"><img class="social" style="background-size: 27px 27px; height: 20px; width: 20px;" src="assests/linkedin.png" alt="Icon"></a>
+            <a href="#"><img class="social" src="assests/youtube.jpg" alt="Icon"></a>
+          </div>
+          <div><br></div>
+          <section>
+            <div class="footer-links" style="padding-left: 5px;">
+              <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">About the BBC</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Accessibility Help</a></li>
+                <li><a href="#">Contact the BBC</a></li>
+                <li><a href="#">Advertise with us</a></li>
+                <li><a href="#">Do not share or sell my info</a></li>
+                <li><a href="#">Contact technical support</a></li>
+              </ul>
+            </div>
+            <div class="footer-note">
+              <p>Copyright 2024 BBC. All rights reserved. The BBC is not responsible for the content of external sites. <span style="font-weight: bold;"> Read about our approach to external linking.</span></p>
+            </div>
+          </section>
         </section>
+      </div>
+      
+    </div>
+    <script>
+        const openGoogle = ()=> {
+            window.open('https://www.google.com', '_blank');
+        }
 
-        
+        const underline= (button) => {
+            document.querySelectorAll('.navbar_button').forEach(btn => {
+                btn.classList.remove('active')
+            });
 
-        <script>
-            const openGoogle = ()=> {
-                window.open('https://www.google.com', '_blank');
-            }
-
-            const underline= (button) => {
-                document.querySelectorAll('.navbar_button').forEach(btn => {
-                    btn.classList.remove('active')
-                });
-
-                button.classList.add('active');
-            }
-        </script>
-        
-    </body>
+            button.classList.add('active');
+        }
+    </script>
+      
+  </body>
 </html>
